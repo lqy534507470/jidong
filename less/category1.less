@@ -1,0 +1,80 @@
+@import 'base1.less';
+// 头部区域
+#header {
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #eee;
+    padding-bottom: 5px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.layout {
+    height: 100%;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+
+// 主体区域
+#main {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    .category-left {
+        width: 85px;
+        height: 100%;
+        ul {
+            >li {
+                >a {
+                    display: block;
+                    width: 85px;
+                    height: 46px;
+                    line-height: 46px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+                &.active {
+                    background-color: #fff;
+                    >a {
+                        color: #de181b;
+                    }
+                }
+            }
+        }
+    }
+    .category-right {
+        background-color: #fff;
+        padding: 10px;
+        flex: 1;
+        #branchList {
+            h4 {
+                font-size: 14px;
+            }
+            ul {
+                padding: 10px;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                >li {
+                    width: 33.33%;
+                    padding: 5px 0;
+                    a> {
+                        display: block;
+                        img {
+                            width: 70px;
+                            height: 70px;
+                        }
+                        span {
+                            padding: 5px 0;
+                            display: block;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

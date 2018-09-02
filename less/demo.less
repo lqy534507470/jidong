@@ -1,0 +1,159 @@
+@import 'base1.less';
+ // 轮播图区域 
+ #slide {
+     width: 100%;
+     height: 100%;
+     img {
+         width: 100%;
+    }
+}
+ // 导航区域 
+ #nav {
+     background-color: #fff;
+     padding: 0.1rem;
+     >ul {
+         display: flex;
+         flex-wrap: wrap;
+         >li {
+             width: 25%;
+             >a {
+                 text-align: center;
+                 display: block;
+                 >img {
+                     width: 0.4rem;
+                     height: 0.4rem;
+                }
+                 p {
+                     font-size: 0.14rem;
+                     margin: 0.05rem 0;
+                }
+            }
+        }
+    }
+}
+ // 主体区域 
+ #main {
+     padding: 0.1rem;
+     background: #eee;
+     padding-bottom: 0.6rem;
+}
+ // 主体部分特色区域 
+ #seckill {
+     margin-top: 0.1rem;
+     background-color: #fff;
+     .seckill-title {
+         padding-top: 0.05rem;
+         width: 100%;
+         height: 0.3rem;
+         line-height: 0.3rem;
+         .seckill-icon {
+             float: left;
+             width: 0.2rem;
+             height: 0.25rem;
+             margin-left: 0.05rem;
+        }
+         .seckill-name {
+             float: left;
+             color: @main-color;
+             font-size: 0.14rem;
+             margin-left: 0.05rem;
+        }
+         .seckill-time {
+             margin-left: 0.1rem;
+             float: left;
+             font-size: 0.14rem;
+             >span {
+                 width: 0.15rem;
+                 height: 0.15rem;
+                 line-height: 0.15rem;
+                 margin-top: 0.05rem;
+                 text-align: center;
+                 display: inline-block;
+                 background: #000;
+                 color: #fff;
+                 &:nth-child(3n) {
+                     background: #fff;
+                     color: #000;
+                     width: 0.05rem;
+                }
+            }
+        }
+         .seckill-more {
+             float: right;
+             font-size: 0.14rem;
+        }
+    }
+     .section-connet {
+         padding: 0.1rem 0;
+         >ul {
+             display: flex;
+             >li {
+                 flex: 1;
+                 border-right: 0.01rem solid #ccc;
+                 &:nth-child(3) {
+                     border: none;
+                }
+                 >a {
+                     text-align: center;
+                     display: block;
+                     >img {
+                         width: 100%;
+                    }
+                     p {
+                         font-size: 0.12rem;
+                         >span {
+                             color: @main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ // 主体部分超市物品
+  #product {
+     margin-top: 0.1rem;
+     .product-title {
+         background: #fff;
+         border-bottom: 0.01rem solid #ccc;
+         >h4 {
+             height: 0.3rem;
+             line-height: 0.3rem;
+             padding-left: 0.2rem;
+             font-weight: normal;
+             position: relative;
+             &::before {
+                 content: "";
+                 width: 0.04rem;
+                 height: 0.15rem;
+                 position: absolute;
+                 background-color: @main-color;
+                 left: 0.1rem;
+                 top: 0.07rem;
+            }
+        }
+    }
+     .product-connet {
+         display: flex;
+         .product-left {
+             background-color: #fff;
+             width: 50%;
+             >a {
+                 display: block;
+                 >img {
+                     width: 100%;
+                }
+            }
+        }
+         .product-right {
+             width: 50%;
+             >a {
+                 display: block;
+                 >img {
+                     width: 100%;
+                }
+            }
+        }
+    }
+}
+ 
